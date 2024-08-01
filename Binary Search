@@ -1,0 +1,39 @@
+import java.util.Scanner; 
+class HelloWorld {
+  public static void main(String[]args){
+      int arr[] = {2,4,6,8,12,23,34,55};
+   
+      
+      int n = arr.length;
+      System.out.println(n);
+       int low = 0;int high = n-1;
+  
+     boolean flag = true;
+      while(low<=high) {
+          int mid = (low+high)/2;
+          if(key==arr[mid]){
+              System.out.println("Search element is"+ arr[mid]);
+              flag = !flag;
+              break;
+          }
+          else if(arr[mid]>key){
+              high = mid-1;
+                  }
+              
+          
+              else if(arr[mid]<key){
+                  low = mid+1;
+                  
+                          
+                  }
+                  
+              }
+              if(flag){
+                  System.out.println("Element not found");
+              }
+          
+      
+      
+  }
+    
+}
