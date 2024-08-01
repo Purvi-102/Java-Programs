@@ -1,0 +1,44 @@
+import java.util.ArrayList;
+import java.util.Collections;
+class HelloWorld {
+    public static void main(String[] args) {
+     ArrayList<Integer> arr = new ArrayList<Integer>();
+     arr.add(1);
+     arr.add(3);
+     arr.add(4);
+     arr.add(5);
+     
+     System.out.println(arr);
+     Collections.sort(arr);
+     System.out.println(arr);
+     int n = arr.size();
+     System.out.println(n);
+
+
+     
+     if(arr.get(0)!=1){
+             System.out.println("Missing element is:" + 1);
+
+          
+         }
+
+
+
+  for(int i =0; i<arr.size();i++){
+         if(arr.get(i+1) - arr.get(i) != 1){
+             int missingNumber = arr.get(i)+1;
+             System.out.println("Missing element is " + missingNumber);
+             break;
+         }
+         else{
+             System.out.println("No missing element found");
+             break;
+         }
+     }
+
+
+    
+   
+     
+    }
+}
