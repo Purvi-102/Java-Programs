@@ -1,0 +1,19 @@
+class HelloWorld {
+    public static void main(String[] args) {
+     String  names[] = { "Geek", "Geeks", "Geeksfor", "GeeksforGeek", "GeeksforGeeks" };
+     int index =0;
+     int n = names.length;
+     String e = names[0];
+     for(int i=1;i<n;i++){
+         String e1 = names[i];
+         if(e1.length()>=e.length()){
+             index = i;
+             e = e1;
+         }
+       
+     }
+     System.out.println(e);
+     
+       
+    }
+}
