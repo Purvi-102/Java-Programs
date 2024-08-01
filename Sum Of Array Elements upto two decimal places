@@ -1,0 +1,23 @@
+import java.text.DecimalFormat;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int arr[] = new int[5];
+        arr[0] = 1;
+        arr[1] = 2;
+        arr[2] = 3;
+        arr[3] = 4;
+        arr[4] = 5;
+        int sum =0;
+        for(int i=0;i<5;i++){
+             sum = sum+arr[i];
+        }
+        System.out.println("Sum of array elements are:"+ sum);
+        double avg;
+        avg = sum/5;
+        DecimalFormat df = new DecimalFormat("#.##");
+        String formattedAverage = df.format(avg);
+        System.out.println("Average is:" +formattedAverage);
+      
+    }
+}
